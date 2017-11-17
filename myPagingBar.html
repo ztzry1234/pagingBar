@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <title>pagingBar</title>
+    <script type="text/JavaScript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/JavaScript" src="js/pagingBar2.0.js"></script>
+    <link href="css/pagingBar.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="pb2" style="width: 600px;" align="left">
+    <script type="text/javascript">
+        //必须
+        $("#pb2").PagingBar({
+            pagingBarType:2  //初始化，不填写即默认
+        });
+
+        //非必须 第一次触发获取数据，设置参数。也可主动触发并使用pgchange方法进行操作
+        $("#pb2").PagingBar.init({
+
+        },"pb2");
+
+        //
+        $("#pb2").PagingBar.pgchange({
+            countNum:60		//获取到总页数之后修改中参数即可，countNum唯一必须获取的数据
+        },"pb2");
+
+        //外部必须实现
+        function getDataPG(currentPage,pageSize,fid){
+            //此处为 点击分页触发的方法，currentPage：当前页 pageSize：每页的数据量 fid,插件的绑定的DIV的id
+        }
+
+        //获取分页参数
+        var optsTaskPB = $("#pb2").PagingBar.opts["pb2"];
+    </script>
+</body>
+</html>

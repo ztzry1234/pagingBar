@@ -1,0 +1,202 @@
+*{
+margin: 0;
+padding: 0;
+	font-family: ËÎÌו;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('Font-Awesome/font/fontawesome-webfont.eot?v=3.2.1');
+  src: url('css/Font-Awesome/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('Font-Awesome/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('Font-Awesome/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('Font-Awesome/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.spile{
+	margin:0px 10px;
+	display: inline-block;
+	width: 1px;
+	height: 24px;
+	background-color: #CACACA;
+	vertical-align: middle;
+}
+
+.pbInput{
+	border: 1px solid #96b6e0;
+    border-radius: 3px;
+    display: inline-block;
+    height: 20px;
+    line-height:20px;
+    position: relative;
+    vertical-align: middle;
+    width: 34px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+.bpButton{
+	display:inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	cursor: pointer;
+	cursor: hand;
+	font-family: FontAwesome;
+	vertical-align: middle;
+	color:#2b2b2b;
+	
+}
+.bpButton:HOVER{
+	color:#888888;
+}
+
+
+.bpP{
+	font-size:12px;
+	display: inline-block;
+	vertical-align:middle;
+	top: -5px;
+	text-indent: 0px;
+}
+
+#firstB:BEFORE{
+	content: "\f049"; font-family: 'FontAwesome';
+}
+#preB:BEFORE{
+	content: "\f04a"; font-family: 'FontAwesome';
+}
+
+#nextB:BEFORE{
+	content: "\f04e"; font-family: 'FontAwesome';
+}
+#endB:BEFORE{
+	content: "\f050"; font-family: 'FontAwesome';
+}
+#refushB:BEFORE{
+	content: "\f021"; font-family: 'FontAwesome';
+}
+
+
+.pg_pagingBar1{
+	height: 30px;
+	width: 800px;
+	line-height: 27px;
+	background-color: #FFFFFF;
+	padding-top:3px;
+}
+
+.pg_pagingBar2{
+	height: 33px;
+	width: 430px;
+	line-height: 27px;
+	background-color: #FFFFFF;
+	padding-left: 5px;
+}
+
+.pg_firstB2{
+	width: 30px;
+	height: 30px;
+	line-height:30px;
+	border: #DDDDDD 1px solid;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	float: left;
+	cursor: pointer;
+	cursor: hand;
+	text-align: center;
+	font-size: 14px;
+	color: #3C9BE8;
+	text-indent: 0px;
+}
+
+.pg_firstB2:BEFORE{
+	content: "\f100"; font-family: 'FontAwesome';
+}
+
+.pg_endB2{
+	width: 30px;
+	height: 30px;
+	line-height:30px;
+	float: left;
+	border: #DDDDDD 1px solid;
+	border-top-RIGHT-radius:3px;
+	border-bottom-RIGHT-radius:3px;
+	cursor: pointer;
+	cursor: hand;
+	text-align: center;
+	font-size: 14px;
+	color: #3C9BE8;
+	text-indent: 0px;
+}
+
+.pg_endB2:BEFORE{
+	content: "\f101"; font-family: 'FontAwesome';
+}
+
+
+.pg_numberDiv2{
+	float: left;
+	height: 30px;
+	margin: 0 0 0 -1px; 
+  	width: 165px;  
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+  	overflow: hidden;  
+}	
+
+.pg_numberDiv2 ul{
+ 	width: 30000px;
+	position: relative;
+}
+
+.pg_numberDiv2 li{
+	list-style: none;
+	float: left;
+	width: 32px;
+	height: 30px;
+	border-left: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: #FFFFFF;
+	color: #347FB7;
+	cursor: pointer;
+	cursor: hand;
+	-webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+}
+
+
+.pg_numberDiv2 li:HOVER {
+	color: #C4E2F9;
+}
+
+
+.pg_numberDiv2 .diable{
+	cursor: default;
+	background-color:#EFEFEF;
+	color:#2b2b2b; 
+}
+.pg_numberDiv2 .diable:hover{
+	cursor: default;
+	background-color:#EFEFEF;
+	color:#2b2b2b; 
+}
+
+.pg_numberDiv2 .onClick{
+	cursor: default;
+	color:#0464FB; 
+	background-color: rgba(9, 35, 245, 0.28);
+}
+
+.pgsize{
+	display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 165px;
+}
